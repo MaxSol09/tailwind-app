@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import { MainSection } from "./MainSection";
+import Wraper from "./Wraper";
+
+
 
 function App() {
+  console.log('fef')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wraper>
+      <Header/>
+      <MainSection/>
+    </Wraper>
   );
 }
 
